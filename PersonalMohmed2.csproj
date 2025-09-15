@@ -1,0 +1,1291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3BCDC83-2636-4E69-B7E0-3D1F8B1EE29B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PersonalMohmed2</RootNamespace>
+    <AssemblyName>PersonalMohmed2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44321</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ContactsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211102103193_Contact.cs" />
+    <Compile Include="Migrations\202211102103193_Contact.designer.cs">
+      <DependentUpon>202211102103193_Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\ContactContext.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\PersonalMohmed2.dll" />
+    <Content Include="bin\PersonalMohmed2.pdb" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\Microsoft.Win32.Primitives.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Console.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.Globalization.Calendars.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.ZipFile.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Net.Http.dll" />
+    <Content Include="bin\roslyn\System.Net.Sockets.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="bin\roslyn\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Optimization.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="bootstrap-icons-1.5.0\alarm-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\alarm.svg" />
+    <Content Include="bootstrap-icons-1.5.0\align-bottom.svg" />
+    <Content Include="bootstrap-icons-1.5.0\align-center.svg" />
+    <Content Include="bootstrap-icons-1.5.0\align-end.svg" />
+    <Content Include="bootstrap-icons-1.5.0\align-middle.svg" />
+    <Content Include="bootstrap-icons-1.5.0\align-start.svg" />
+    <Content Include="bootstrap-icons-1.5.0\align-top.svg" />
+    <Content Include="bootstrap-icons-1.5.0\alt.svg" />
+    <Content Include="bootstrap-icons-1.5.0\app-indicator.svg" />
+    <Content Include="bootstrap-icons-1.5.0\app.svg" />
+    <Content Include="bootstrap-icons-1.5.0\archive-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\archive.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-90deg-down.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-90deg-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-90deg-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-90deg-up.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-bar-down.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-bar-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-bar-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-bar-up.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-clockwise.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-counterclockwise.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-circle-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-circle.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-left-circle-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-left-circle.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-left-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-left-square.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-right-circle-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-right-circle.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-right-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-right-square.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-short.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-square.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down-up.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-down.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-left-circle-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-left-circle.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-left-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-left-short.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-left-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-left-square.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-repeat.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-return-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-return-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-right-circle-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-right-circle.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-right-short.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-right-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-right-square.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-circle-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-circle.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-left-circle-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-left-circle.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-left-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-left-square.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-right-circle-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-right-circle.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-right-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-right-square.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-short.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up-square.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrow-up.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrows-angle-contract.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrows-angle-expand.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrows-collapse.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrows-expand.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrows-fullscreen.svg" />
+    <Content Include="bootstrap-icons-1.5.0\arrows-move.svg" />
+    <Content Include="bootstrap-icons-1.5.0\aspect-ratio-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\aspect-ratio.svg" />
+    <Content Include="bootstrap-icons-1.5.0\asterisk.svg" />
+    <Content Include="bootstrap-icons-1.5.0\at.svg" />
+    <Content Include="bootstrap-icons-1.5.0\award-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\award.svg" />
+    <Content Include="bootstrap-icons-1.5.0\back.svg" />
+    <Content Include="bootstrap-icons-1.5.0\backspace-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\backspace-reverse-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\backspace-reverse.svg" />
+    <Content Include="bootstrap-icons-1.5.0\backspace.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-3d-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-3d.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-4k-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-4k.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-8k-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-8k.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-ad-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-ad.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-ar-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-ar.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-cc-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-cc.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-hd-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-hd.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-tm-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-tm.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-vo-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-vo.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-vr-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-vr.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-wc-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\badge-wc.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bag-check-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bag-check.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bag-dash-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bag-dash.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bag-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bag-plus-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bag-plus.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bag-x-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bag-x.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bag.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bank.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bank2.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bar-chart-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bar-chart-line-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bar-chart-line.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bar-chart-steps.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bar-chart.svg" />
+    <Content Include="bootstrap-icons-1.5.0\basket-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\basket.svg" />
+    <Content Include="bootstrap-icons-1.5.0\basket2-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\basket2.svg" />
+    <Content Include="bootstrap-icons-1.5.0\basket3-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\basket3.svg" />
+    <Content Include="bootstrap-icons-1.5.0\battery-charging.svg" />
+    <Content Include="bootstrap-icons-1.5.0\battery-full.svg" />
+    <Content Include="bootstrap-icons-1.5.0\battery-half.svg" />
+    <Content Include="bootstrap-icons-1.5.0\battery.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bell-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bell-slash-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bell-slash.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bell.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bezier.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bezier2.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bicycle.svg" />
+    <Content Include="bootstrap-icons-1.5.0\binoculars-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\binoculars.svg" />
+    <Content Include="bootstrap-icons-1.5.0\blockquote-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\blockquote-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\book-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\book-half.svg" />
+    <Content Include="bootstrap-icons-1.5.0\book.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-check-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-check.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-dash-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-dash.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-heart-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-heart.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-plus-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-plus.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-star-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-star.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-x-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark-x.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmark.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmarks-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookmarks.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bookshelf.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bootstrap-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bootstrap-icons.css" />
+    <Content Include="bootstrap-icons-1.5.0\bootstrap-icons.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bootstrap-reboot.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bootstrap.svg" />
+    <Content Include="bootstrap-icons-1.5.0\border-all.svg" />
+    <Content Include="bootstrap-icons-1.5.0\border-bottom.svg" />
+    <Content Include="bootstrap-icons-1.5.0\border-center.svg" />
+    <Content Include="bootstrap-icons-1.5.0\border-inner.svg" />
+    <Content Include="bootstrap-icons-1.5.0\border-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\border-middle.svg" />
+    <Content Include="bootstrap-icons-1.5.0\border-outer.svg" />
+    <Content Include="bootstrap-icons-1.5.0\border-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\border-style.svg" />
+    <Content Include="bootstrap-icons-1.5.0\border-top.svg" />
+    <Content Include="bootstrap-icons-1.5.0\border-width.svg" />
+    <Content Include="bootstrap-icons-1.5.0\border.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bounding-box-circles.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bounding-box.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-down-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-down-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-down.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-in-down-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-in-down-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-in-down.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-in-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-in-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-in-up-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-in-up-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-in-up.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-up-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-up-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-arrow-up.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box-seam.svg" />
+    <Content Include="bootstrap-icons-1.5.0\box.svg" />
+    <Content Include="bootstrap-icons-1.5.0\braces.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bricks.svg" />
+    <Content Include="bootstrap-icons-1.5.0\briefcase-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\briefcase.svg" />
+    <Content Include="bootstrap-icons-1.5.0\brightness-alt-high-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\brightness-alt-high.svg" />
+    <Content Include="bootstrap-icons-1.5.0\brightness-alt-low-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\brightness-alt-low.svg" />
+    <Content Include="bootstrap-icons-1.5.0\brightness-high-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\brightness-high.svg" />
+    <Content Include="bootstrap-icons-1.5.0\brightness-low-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\brightness-low.svg" />
+    <Content Include="bootstrap-icons-1.5.0\broadcast-pin.svg" />
+    <Content Include="bootstrap-icons-1.5.0\broadcast.svg" />
+    <Content Include="bootstrap-icons-1.5.0\brush-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\brush.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bucket-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bucket.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bug-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bug.svg" />
+    <Content Include="bootstrap-icons-1.5.0\building.svg" />
+    <Content Include="bootstrap-icons-1.5.0\bullseye.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calculator-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calculator.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-check-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-check.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-date-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-date.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-day-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-day.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-event-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-event.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-minus-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-minus.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-month-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-month.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-plus-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-plus.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-range-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-range.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-week-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-week.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-x-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar-x.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-check-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-check.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-date-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-date.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-day-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-day.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-event-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-event.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-minus-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-minus.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-month-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-month.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-plus-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-plus.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-range-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-range.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-week-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-week.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-x-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2-x.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar2.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar3-event-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar3-event.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar3-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar3-range-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar3-range.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar3-week-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar3-week.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar3.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar4-event.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar4-range.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar4-week.svg" />
+    <Content Include="bootstrap-icons-1.5.0\calendar4.svg" />
+    <Content Include="bootstrap-icons-1.5.0\camera-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\camera-reels-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\camera-reels.svg" />
+    <Content Include="bootstrap-icons-1.5.0\camera-video-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\camera-video-off-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\camera-video-off.svg" />
+    <Content Include="bootstrap-icons-1.5.0\camera-video.svg" />
+    <Content Include="bootstrap-icons-1.5.0\camera.svg" />
+    <Content Include="bootstrap-icons-1.5.0\camera2.svg" />
+    <Content Include="bootstrap-icons-1.5.0\capslock-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\capslock.svg" />
+    <Content Include="bootstrap-icons-1.5.0\card-checklist.svg" />
+    <Content Include="bootstrap-icons-1.5.0\card-heading.svg" />
+    <Content Include="bootstrap-icons-1.5.0\card-image.svg" />
+    <Content Include="bootstrap-icons-1.5.0\card-list.svg" />
+    <Content Include="bootstrap-icons-1.5.0\card-text.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-down-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-down-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-down-square.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-down.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-left-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-left-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-left-square.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-right-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-right-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-right-square.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-up-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-up-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-up-square.svg" />
+    <Content Include="bootstrap-icons-1.5.0\caret-up.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart-check-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart-check.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart-dash-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart-dash.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart-plus-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart-plus.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart-x-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart-x.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart2.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart3.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cart4.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cash-coin.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cash-stack.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cash.svg" />
+    <Content Include="bootstrap-icons-1.5.0\cast.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-dots-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-dots.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-left-dots-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-left-dots.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-left-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-left-quote-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-left-quote.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-left-text-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-left-text.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-left.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-quote-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-quote.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-right-dots-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-right-dots.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-right-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-right-quote-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-right-quote.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-right-text-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-right-text.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-right.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-square-dots-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-square-dots.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-square-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-square-quote-fill.svg" />
+    <Content Include="bootstrap-icons-1.5.0\chat-square-quote.svg" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Css\One.css" />
+    <Content Include="DownLoad\iPortfolio\assets\js\main.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\aos\aos.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\aos\aos.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap-icons\bootstrap-icons.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap-icons\index.html" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-utilities.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap.rtl.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\js\bootstrap.esm.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\boxicons\css\animations.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\boxicons\css\boxicons.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\boxicons\css\boxicons.min.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\boxicons\css\transformations.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\boxicons\fonts\boxicons.svg" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\glightbox\css\glightbox.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\glightbox\css\glightbox.min.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\glightbox\js\glightbox.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\glightbox\js\glightbox.min.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\isotope-layout\isotope.pkgd.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\isotope-layout\isotope.pkgd.min.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\php-email-form\validate.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\purecounter\purecounter.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\swiper\swiper-bundle.min.css" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\swiper\swiper-bundle.min.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\typed.js\typed.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\typed.js\typed.min.js" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\waypoints\noframework.waypoints.js" />
+    <Content Include="DownLoad\iPortfolio\changelog.txt" />
+    <Content Include="DownLoad\iPortfolio\Readme.txt" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Html\MyWork.html" />
+    <Content Include="Html\One.html" />
+    <Content Include="Img\8-01.png" />
+    <Content Include="Img\Clients\ا-01.png" />
+    <Content Include="Img\Clients\ا-02.png" />
+    <Content Include="Img\Clients\ا-03.png" />
+    <Content Include="Img\Clients\ا-04.png" />
+    <Content Include="Img\Clients\ا-05.png" />
+    <Content Include="Img\Clients\ا-06.png" />
+    <Content Include="Img\Clients\ا-07.png" />
+    <Content Include="Img\Clients\ا-08.png" />
+    <Content Include="Img\Clients\ا-09.png" />
+    <Content Include="Img\Clients\ا-10.png" />
+    <Content Include="Img\Clients\ا-11.png" />
+    <Content Include="Img\Clients\ا-12.png" />
+    <Content Include="Img\Clients\ا-13.png" />
+    <Content Include="Img\Clients\ا-14.png" />
+    <Content Include="Img\Clients\ا-15.png" />
+    <Content Include="Img\Clients\ا-16.png" />
+    <Content Include="Img\Clients\ا-17.png" />
+    <Content Include="Img\Clients\ا-18.png" />
+    <Content Include="Img\Clients\ا-19.png" />
+    <Content Include="Img\Clients\ا-20.png" />
+    <Content Include="Img\Clients\ا-21.png" />
+    <Content Include="Img\Untitled-1-02 %282%29.jpg" />
+    <Content Include="Img\WhatsApp Image 2022-11-11 at 12.17.32 AM.jpeg" />
+    <Content Include="MohmedWork\اخطبوط\142 copy.jpg" />
+    <Content Include="MohmedWork\اخطبوط\2 %283%29.jpg" />
+    <Content Include="MohmedWork\اخطبوط\5.jpg" />
+    <Content Include="MohmedWork\اخطبوط\rm388-rm363-s26-b27-mockup.jpg" />
+    <Content Include="MohmedWork\اخطبوط\Untitled-1 %284%29.jpg" />
+    <Content Include="MohmedWork\ارت لاين\152_social_media_post_template %281%29.jpg" />
+    <Content Include="MohmedWork\ارت لاين\2-01.jpg" />
+    <Content Include="MohmedWork\ارت لاين\3.jpg" />
+    <Content Include="MohmedWork\ارت لاين\465_digital_marketing_social_media_post_template copy %282%29.jpg" />
+    <Content Include="MohmedWork\ارت لاين\474_digital_marketing_social_media_post_template %281%29.jpg" />
+    <Content Include="MohmedWork\ارت لاين\522 copy %281%29.jpg" />
+    <Content Include="MohmedWork\ارت لاين\6-01.jpg" />
+    <Content Include="MohmedWork\ارت لاين\leader.jpg" />
+    <Content Include="MohmedWork\ارت لاين\m3 %282%29.jpg" />
+    <Content Include="MohmedWork\ارت لاين\travel_social_media_banner_21 %282%29.jpg" />
+    <Content Include="MohmedWork\ارت لاين\Untitled-1 %282%29 %282%29.jpg" />
+    <Content Include="MohmedWork\ارت لاين\Untitled-1 %287%29.jpg" />
+    <Content Include="MohmedWork\ارت لاين\Untitled-1-01 %283%29.jpg" />
+    <Content Include="MohmedWork\ارت لاين\Untitled-12-01.jpg" />
+    <Content Include="MohmedWork\ارت لاين\Untitled-2-01 %282%29.jpg" />
+    <Content Include="MohmedWork\ارت لاين\Untitled-2-01 %284%29.jpg" />
+    <Content Include="MohmedWork\ارت لاين\Untitled-4-01.jpg" />
+    <Content Include="MohmedWork\استقدام\4-01 %282%29.jpg" />
+    <Content Include="MohmedWork\استقدام\Untitled-1-01 %284%29.jpg" />
+    <Content Include="MohmedWork\استقدام\Vector Smart Object-01.jpg" />
+    <Content Include="MohmedWork\الارض الطيبة\247663851_107842278359062_4741839672404436453_n.png" />
+    <Content Include="MohmedWork\الارض الطيبة\249848061_113482531128370_3382303276767380810_n.png" />
+    <Content Include="MohmedWork\الارض الطيبة\250405699_113484327794857_1394478768454938322_n.png" />
+    <Content Include="MohmedWork\الارض الطيبة\250784560_113476221129001_232002690745446483_n.png" />
+    <Content Include="MohmedWork\الارض الطيبة\255354879_118002427343047_5226855175909916342_n.png" />
+    <Content Include="MohmedWork\الارض الطيبة\257826028_120266127116677_8129669685169832324_n.png" />
+    <Content Include="MohmedWork\الارض الطيبة\262968020_126113136531976_7268905888890272876_n.png" />
+    <Content Include="MohmedWork\الارض الطيبة\268790862_129429266200363_4902497732129218193_n.png" />
+    <Content Include="MohmedWork\الارض الطيبة\269594538_129991556144134_8953306773591648842_n.png" />
+    <Content Include="MohmedWork\الارض الطيبة\276107157_154536903689599_6631870482188111833_n.png" />
+    <Content Include="MohmedWork\الارض الطيبة\279779572_164484269361529_8289678525253769124_n.jpg" />
+    <Content Include="MohmedWork\الشدي\33-01.jpg" />
+    <Content Include="MohmedWork\الشدي\6-01 %281%29.jpg" />
+    <Content Include="MohmedWork\الشدي\Untitled-2-02.jpg" />
+    <Content Include="MohmedWork\الشدي\Untitled-4-01 %281%29.jpg" />
+    <Content Include="MohmedWork\العملاء\ا-01.png" />
+    <Content Include="MohmedWork\العملاء\ا-02.png" />
+    <Content Include="MohmedWork\العملاء\ا-03.png" />
+    <Content Include="MohmedWork\العملاء\ا-04.png" />
+    <Content Include="MohmedWork\العملاء\ا-05.png" />
+    <Content Include="MohmedWork\العملاء\ا-06.png" />
+    <Content Include="MohmedWork\العملاء\ا-07.png" />
+    <Content Include="MohmedWork\العملاء\ا-08.png" />
+    <Content Include="MohmedWork\العملاء\ا-09.png" />
+    <Content Include="MohmedWork\العملاء\ا-10.png" />
+    <Content Include="MohmedWork\العملاء\ا-11.png" />
+    <Content Include="MohmedWork\العملاء\ا-12.png" />
+    <Content Include="MohmedWork\العملاء\ا-13.png" />
+    <Content Include="MohmedWork\العملاء\ا-14.png" />
+    <Content Include="MohmedWork\العملاء\ا-15.png" />
+    <Content Include="MohmedWork\العملاء\ا-16.png" />
+    <Content Include="MohmedWork\العملاء\ا-17.png" />
+    <Content Include="MohmedWork\العملاء\ا-18.png" />
+    <Content Include="MohmedWork\العملاء\ا-19.png" />
+    <Content Include="MohmedWork\العملاء\ا-20.png" />
+    <Content Include="MohmedWork\العملاء\ا-21.png" />
+    <Content Include="MohmedWork\بانر\6 %281%29.png" />
+    <Content Include="MohmedWork\بانر\Untitled-1-01 %282%29.png" />
+    <Content Include="MohmedWork\بانر\بانر %281%29.png" />
+    <Content Include="MohmedWork\بانر\ساعة 2.png" />
+    <Content Include="MohmedWork\ثروت ماركت\New folder\5-01 %281%29.png" />
+    <Content Include="MohmedWork\ثروت ماركت\Untitled-2-01 %283%29.jpg" />
+    <Content Include="MohmedWork\ثروت ماركت\ادارة السوشيال ميديا_Mesa de trabajo 1.jpg" />
+    <Content Include="MohmedWork\ثروت ماركت\الاول\design3-01 %281%29.png" />
+    <Content Include="MohmedWork\ثروت ماركت\الاول\Untitled-1-01 %283%29.png" />
+    <Content Include="MohmedWork\ثروت ماركت\تصميم المواقع_Mesa de trabajo 1.jpg" />
+    <Content Include="MohmedWork\ثروت ماركت\جوجل ادد-01.jpg" />
+    <Content Include="MohmedWork\ثروت ماركت\صناعة الفيديو-01.png" />
+    <Content Include="MohmedWork\ثروت ماركت\كونتنت كرييتور-01.png" />
+    <Content Include="MohmedWork\ثروت ماركت\ماركت بلان.png" />
+    <Content Include="MohmedWork\دبليو تي الطويل\2 %282%29.jpg" />
+    <Content Include="MohmedWork\دبليو تي الطويل\5163506 2.jpg" />
+    <Content Include="MohmedWork\دبليو تي الطويل\5163506.jpg" />
+    <Content Include="MohmedWork\دبليو تي الطويل\5480263.jpg" />
+    <Content Include="MohmedWork\دبليو تي الطويل\564.jpg" />
+    <Content Include="MohmedWork\دبليو تي الطويل\6379215_Mesa de trabajo 1 copia.jpg" />
+    <Content Include="MohmedWork\دبليو تي الطويل\rm373batch3-01-02.jpg" />
+    <Content Include="MohmedWork\دبليو تي الطويل\Untitled-1 %285%29.jpg" />
+    <Content Include="MohmedWork\دبليو تي الطويل\Untitled-4-01 %282%29.jpg" />
+    <Content Include="MohmedWork\دبليو تي الطويل\Untitled-4-02.jpg" />
+    <Content Include="MohmedWork\دبليو تي الطويل\Untitled-6-01.jpg" />
+    <Content Include="MohmedWork\دبليو تي الطويل\بانر\18714 [Converted]-03 %281%29.png" />
+    <Content Include="MohmedWork\دبليو تي\5086170 copy.jpg" />
+    <Content Include="MohmedWork\دبليو تي\dss-01.png" />
+    <Content Include="MohmedWork\دبليو تي\dss-02.png" />
+    <Content Include="MohmedWork\دبليو تي\dss-03.png" />
+    <Content Include="MohmedWork\دبليو تي\dss-04.png" />
+    <Content Include="MohmedWork\دبليو تي\sale.jpg" />
+    <Content Include="MohmedWork\دبليو تي\Untitled-2 %283%29.jpg" />
+    <Content Include="MohmedWork\دبليو تي\Untitled-2-01 %281%29.jpg" />
+    <Content Include="MohmedWork\دبليو تي\Untitled-3-01.png" />
+    <Content Include="MohmedWork\دبليو تي\Untitled-4-01 %283%29.jpg" />
+    <Content Include="MohmedWork\دبليو تي\اول\5542356.jpg" />
+    <Content Include="MohmedWork\سارة\4.jpg" />
+    <Content Include="MohmedWork\سارة\5.jpg" />
+    <Content Include="MohmedWork\سارة\Untitled-1 %282%29 %281%29.jpg" />
+    <Content Include="MohmedWork\سارة\Untitled-2.jpg" />
+    <Content Include="MohmedWork\سارة\Untitled-3.jpg" />
+    <Content Include="MohmedWork\سارة\لوجو-01.jpg" />
+    <Content Include="MohmedWork\كافينو\1_png.png" />
+    <Content Include="MohmedWork\كافينو\2 %285%29.png" />
+    <Content Include="MohmedWork\كافينو\3 %282%29 %281%29.png" />
+    <Content Include="MohmedWork\كافينو\85Untitled-2.png" />
+    <Content Include="MohmedWork\كافينو\New folder\2 %283%29.jpg" />
+    <Content Include="MohmedWork\كافينو\New folder\cover.jpg" />
+    <Content Include="MohmedWork\كافينو\New folder\food-web-banner-081.jpg" />
+    <Content Include="MohmedWork\كافينو\New folder\Untitled-34-01.jpg" />
+    <Content Include="MohmedWork\كافينو\Untitled-1 %283%29.png" />
+    <Content Include="MohmedWork\كافينو\Untitled-2-01 %283%29.png" />
+    <Content Include="MohmedWork\كافينو\بدون دخان %281%29.png" />
+    <Content Include="MohmedWork\كله علي كله\3500490.jpg" />
+    <Content Include="MohmedWork\كله علي كله\500935-PHXIUI-730-01.jpg" />
+    <Content Include="MohmedWork\كله علي كله\Clean_minimal_business_card_Vol_274.jpg" />
+    <Content Include="MohmedWork\كله علي كله\Untitled-1-01 %283%29.jpg" />
+    <Content Include="MohmedWork\كله علي كله\Untitled-32112-01.jpg" />
+    <Content Include="MohmedWork\كله علي كله\Untitled-4-05.jpg" />
+    <Content Include="MohmedWork\كله علي كله\انطلاقة الصباح2.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\1657 [Converted]-02.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\5104575-01.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\Untitled-2 %282%29.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\Untitled-2-01 %282%29.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\Untitled-2-02.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\Untitled-2-03.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\اللاول\2508840-01.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\اللاول\4-01.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\اللاول\Untitled-1 %284%29.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\اللاول\Untitled-1 [Recovered]-01.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\اللاول\Untitled-1-01 %282%29 %281%29.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\اللاول\Untitled-1-01 %283%29 %281%29.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\اللاول\Untitled-1-01 %284%29.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\اللاول\Untitled-3-01.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\بانر\2 %282%29.jpg" />
+    <Content Include="MohmedWork\مؤسسة حكاية عشبة\بانر\Untitled-6-01 %282%29.jpg" />
+    <Content Include="obj\Debug\PersonalMohmed2.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\PersonalMohmed2.dll" />
+    <Content Include="obj\Debug\PersonalMohmed2.pdb" />
+    <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll" />
+    <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.pdb" />
+    <Content Include="packages\bootstrap.5.2.2\bootstrap.png" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.js" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.js" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.min.js" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-grid.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-grid.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-grid.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-reboot.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-reboot.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-reboot.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-utilities.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-utilities.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-utilities.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.2\content\Scripts\bootstrap.bundle.js" />
+    <Content Include="packages\bootstrap.5.2.2\content\Scripts\bootstrap.bundle.min.js" />
+    <Content Include="packages\bootstrap.5.2.2\content\Scripts\bootstrap.esm.js" />
+    <Content Include="packages\bootstrap.5.2.2\content\Scripts\bootstrap.esm.min.js" />
+    <Content Include="packages\bootstrap.5.2.2\content\Scripts\bootstrap.js" />
+    <Content Include="packages\bootstrap.5.2.2\content\Scripts\bootstrap.min.js" />
+    <Content Include="packages\EntityFramework.6.4.4\build\Microsoft.Data.Entity.Build.Tasks.dll" />
+    <Content Include="packages\EntityFramework.6.4.4\Icon.png" />
+    <Content Include="packages\EntityFramework.6.4.4\lib\net40\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.6.4.4\lib\net40\EntityFramework.SqlServer.dll" />
+    <Content Include="packages\EntityFramework.6.4.4\lib\net40\EntityFramework.SqlServer.xml" />
+    <Content Include="packages\EntityFramework.6.4.4\lib\net40\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll" />
+    <Content Include="packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.xml" />
+    <Content Include="packages\EntityFramework.6.4.4\lib\net45\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.6.4.4\lib\netstandard2.1\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.6.4.4\lib\netstandard2.1\EntityFramework.SqlServer.dll" />
+    <Content Include="packages\EntityFramework.6.4.4\lib\netstandard2.1\EntityFramework.SqlServer.xml" />
+    <Content Include="packages\EntityFramework.6.4.4\lib\netstandard2.1\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\about_EntityFramework6.help.txt" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\net40\any\ef6.exe" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\net40\any\ef6.pdb" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\net40\win-x86\ef6.exe" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\net40\win-x86\ef6.pdb" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\net45\any\ef6.exe" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\net45\any\ef6.pdb" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\net45\win-x86\ef6.exe" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\net45\win-x86\ef6.pdb" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\netcoreapp3.0\any\ef6.dll" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\netcoreapp3.0\any\ef6.pdb" />
+    <Content Include="MohmedWork\ملفات بي دي اف\legende.pdf" />
+    <Content Include="MohmedWork\ملفات بي دي اف\prof alard eltayieba.pdf" />
+    <Content Include="MohmedWork\ملفات بي دي اف\prof awt.pdf" />
+    <Content Include="MohmedWork\ملفات بي دي اف\prof shada 1.pdf" />
+    <Content Include="MohmedWork\ملفات بي دي اف\prof shada2.pdf" />
+    <None Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1-vsdoc.js" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.js" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.min.js" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="packages\jQuery.3.4.1\Tools\jquery-3.4.1.intellisense.js" />
+    <None Include="packages\jQuery.Validation.1.17.0\Content\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="packages\jQuery.Validation.1.17.0\Content\Scripts\jquery.validate.js" />
+    <Content Include="packages\jQuery.Validation.1.17.0\Content\Scripts\jquery.validate.min.js" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.xml" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.9\NET.icon.png" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.9\NET_Library_EULA_ENU.txt" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.xml" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.9\NET.icon.png" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.9\NET_Library_EULA_ENU.txt" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\system.web.optimization.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\NET.icon.png" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\NET_Library_EULA_ENU.txt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csi.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.AppContext.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Diagnostics.StackTrace.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.IO.FileSystem.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Win32.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.AppContext.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Console.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.StackTrace.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Globalization.Calendars.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.Compression.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.Compression.ZipFile.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.FileSystem.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Net.Http.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Net.Sockets.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Text.Encoding.CodePages.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.ValueTuple.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.ReaderWriter.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XmlDocument.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XPath.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XPath.XDocument.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.11\Content\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.11\Content\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="packages\Modernizr.2.8.3\Content\Scripts\modernizr-2.8.3.js" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard1.0\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard1.0\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard1.3\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard1.3\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard2.0\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\WebGrease.1.6.0\lib\WebGrease.dll" />
+    <Content Include="packages\WebGrease.1.6.0\tools\WG.EXE" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="bin\PersonalMohmed2.dll.config" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.exe.config" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.Managed.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="bootstrap-icons-1.5.0\bootstrap-icons.json" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap-icons\bootstrap-icons.json" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\js\bootstrap.esm.js.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\boxicons\fonts\boxicons.eot" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\boxicons\fonts\boxicons.ttf" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\boxicons\fonts\boxicons.woff" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\boxicons\fonts\boxicons.woff2" />
+    <Content Include="DownLoad\iPortfolio\assets\vendor\typed.js\typed.min.js.map" />
+    <Content Include="obj\Debug\build.force" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\PersonalMohmed2.csproj.AssemblyReference.cache" />
+    <Content Include="obj\Debug\PersonalMohmed2.csproj.CopyComplete" />
+    <Content Include="obj\Debug\PersonalMohmed2.csproj.CoreCompileInputs.cache" />
+    <Content Include="packages\Antlr.3.5.0.2\.signature.p7s" />
+    <Content Include="packages\Antlr.3.5.0.2\Antlr.3.5.0.2.nupkg" />
+    <Content Include="packages\bootstrap.5.2.2\.signature.p7s" />
+    <Content Include="packages\bootstrap.5.2.2\bootstrap.5.2.2.nupkg" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.js.map" />
+    <Content Include="packages\bootstrap.5.2.2\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-grid.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-grid.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-reboot.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-reboot.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-utilities.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-utilities.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Content\bootstrap.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Scripts\bootstrap.bundle.js.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Scripts\bootstrap.esm.js.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Scripts\bootstrap.js.map" />
+    <Content Include="packages\bootstrap.5.2.2\content\Scripts\bootstrap.min.js.map" />
+    <Content Include="packages\EntityFramework.6.4.4\.signature.p7s" />
+    <Content Include="packages\EntityFramework.6.4.4\buildTransitive\EntityFramework.props" />
+    <Content Include="packages\EntityFramework.6.4.4\buildTransitive\EntityFramework.targets" />
+    <Content Include="packages\EntityFramework.6.4.4\buildTransitive\netcoreapp3.0\EntityFramework.props" />
+    <Content Include="packages\EntityFramework.6.4.4\buildTransitive\netcoreapp3.0\EntityFramework.targets" />
+    <Content Include="packages\EntityFramework.6.4.4\build\EntityFramework.DefaultItems.props" />
+    <Content Include="packages\EntityFramework.6.4.4\build\EntityFramework.props" />
+    <Content Include="packages\EntityFramework.6.4.4\build\EntityFramework.targets" />
+    <Content Include="packages\EntityFramework.6.4.4\build\netcoreapp3.0\EntityFramework.props" />
+    <Content Include="packages\EntityFramework.6.4.4\build\netcoreapp3.0\EntityFramework.targets" />
+    <Content Include="packages\EntityFramework.6.4.4\content\net40\App.config.install.xdt" />
+    <Content Include="packages\EntityFramework.6.4.4\content\net40\App.config.transform" />
+    <Content Include="packages\EntityFramework.6.4.4\content\net40\Web.config.install.xdt" />
+    <Content Include="packages\EntityFramework.6.4.4\content\net40\Web.config.transform" />
+    <Content Include="packages\EntityFramework.6.4.4\EntityFramework.6.4.4.nupkg" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\EntityFramework6.PS2.psd1" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\EntityFramework6.PS2.psm1" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\EntityFramework6.psd1" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\EntityFramework6.psm1" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\init.ps1" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\install.ps1" />
+    <Content Include="packages\EntityFramework.6.4.4\tools\netcoreapp3.0\any\ef6.runtimeconfig.json" />
+    <Content Include="packages\jQuery.3.4.1\.signature.p7s" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.min.map" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="packages\jQuery.3.4.1\jQuery.3.4.1.nupkg" />
+    <Content Include="packages\jQuery.3.4.1\Tools\common.ps1" />
+    <Content Include="packages\jQuery.3.4.1\Tools\install.ps1" />
+    <Content Include="packages\jQuery.3.4.1\Tools\uninstall.ps1" />
+    <Content Include="packages\jQuery.Validation.1.17.0\.signature.p7s" />
+    <Content Include="packages\jQuery.Validation.1.17.0\jQuery.Validation.1.17.0.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.9\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.9\Content\Web.config.install.xdt" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.9\Content\Web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.9\Microsoft.AspNet.Mvc.5.2.9.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.9\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.9\Microsoft.AspNet.Razor.3.2.9.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\Content\Web.config.install.xdt" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\Content\Web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.9\Microsoft.AspNet.WebPages.3.2.9.nupkg" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\.signature.p7s" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\app.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\app.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\web.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\app.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\app.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\web.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1.nupkg" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\net45\install.ps1" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\net45\uninstall.ps1" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csi.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CSharp.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\VBCSCompiler.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CSharp.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Managed.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe.config" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.11\.signature.p7s" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.11\Microsoft.jQuery.Unobtrusive.Validation.3.2.11.nupkg" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" />
+    <Content Include="packages\Modernizr.2.8.3\.signature.p7s" />
+    <Content Include="packages\Modernizr.2.8.3\Modernizr.2.8.3.nupkg" />
+    <Content Include="packages\Modernizr.2.8.3\Tools\common.ps1" />
+    <Content Include="packages\Modernizr.2.8.3\Tools\install.ps1" />
+    <Content Include="packages\Modernizr.2.8.3\Tools\uninstall.ps1" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\.signature.p7s" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\LICENSE.md" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\Newtonsoft.Json.12.0.2.nupkg" />
+    <Content Include="packages\WebGrease.1.6.0\.signature.p7s" />
+    <Content Include="packages\WebGrease.1.6.0\WebGrease.1.6.0.nupkg" />
+    <None Include="Scripts\jquery-3.6.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.1.js" />
+    <Content Include="Scripts\jquery-3.6.1.min.js" />
+    <Content Include="Scripts\jquery-3.6.1.slim.js" />
+    <Content Include="Scripts\jquery-3.6.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.6.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.1.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Contacts\Create.cshtml" />
+    <Content Include="Views\Contacts\Delete.cshtml" />
+    <Content Include="Views\Contacts\Details.cshtml" />
+    <Content Include="Views\Contacts\Edit.cshtml" />
+    <Content Include="Views\Contacts\Index.cshtml" />
+    <Content Include="Views\Contacts\Indexxx.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bootstrap-icons-1.5.0\fonts\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202211102103193_Contact.resx">
+      <DependentUpon>202211102103193_Contact.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60492</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44321/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
